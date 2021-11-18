@@ -278,7 +278,12 @@ after_build:
 #---------------------------------#
 #     deployment configuration    #
 #---------------------------------#
-#No deployment under unknown  computer!!!
+deploy:
+  release: myproduct-v$(APPVEYOR_BUILD_VERSION)
+  description: 'Release description'
+  provider: GitHub
+  draft: false
+  prerelease: false
 
 #---------------------------------#
 #        global handlers          #
