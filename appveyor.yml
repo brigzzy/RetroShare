@@ -282,6 +282,8 @@ deploy:
   release: myproduct-v$(APPVEYOR_BUILD_VERSION)
   description: 'Release description'
   provider: GitHub
+  auth_token:
+    secure: c7Xm7EtGP99Z8wk3U9LZAmO55XpiqjD5Z9lMzpBQrhm8WO
   draft: false
   prerelease: false
 
